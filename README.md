@@ -15,7 +15,7 @@ The application is structured around four primary modules:
 
 ## Application Screenshots
 
-| Splash & Login | Registration | Task Dashboard | Add Task |
+| Splash | Sign In | Registration | Task Dashboard |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/1.LoadPage.png" width="200" /> | <img src="screenshots/2.SignPage.png" width="200" /> | <img src="screenshots/3.RegisterPage.png" width="200" /> | <img src="screenshots/4.TaskPage.png" width="200" /> |
 | **Loading Screen** | **Sign In** | **Registration** | **Task List** |
