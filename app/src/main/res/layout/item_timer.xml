@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/bg_card"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Row 1: Title + Delete -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvTimerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <ImageButton
+                android:id="@+id/btnTimerEdit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="Edit timer"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:tint="#9E9E9E" />
+
+            <ImageButton
+                android:id="@+id/btnTimerDelete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Delete timer"
+                app:tint="@color/text_secondary" />
+
+        </LinearLayout>
+
+        <!-- Row 2: Time display -->
+        <TextView
+            android:id="@+id/tvTimerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="monospace"
+            android:text="00:00:00"
+            android:textColor="@color/accent"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <!-- Row 3: Progress bar -->
+        <ProgressBar
+            android:id="@+id/timerProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="100"
+            android:progressTint="@color/accent"
+            android:progressBackgroundTint="@color/divider" />
+
+        <!-- Row 4: Status + Action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvTimerStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ready"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <!-- Start -->
+            <ImageButton
+                android:id="@+id/btnTimerStart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_chip_selected"
+                android:src="@android:drawable/ic_media_play"
+                android:contentDescription="Start"
+                android:padding="8dp"
+                app:tint="@color/accent" />
+
+            <!-- Pause -->
+            <ImageButton
+                android:id="@+id/btnTimerPause"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chip_selected"
+                android:src="@android:drawable/ic_media_pause"
+                android:contentDescription="Pause"
+                android:padding="8dp"
+                android:visibility="gone"
+                app:tint="@color/accent" />
+
+            <!-- Resume -->
+            <ImageButton
+                android:id="@+id/btnTimerResume"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chip_selected"
+                android:src="@android:drawable/ic_media_play"
+                android:contentDescription="Resume"
+                android:padding="8dp"
+                android:visibility="gone"
+                app:tint="@color/success" />
+
+            <!-- Reset -->
+            <ImageButton
+                android:id="@+id/btnTimerReset"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chip_unselected"
+                android:src="@drawable/ic_reset"
+                android:contentDescription="Reset"
+                android:padding="8dp"
+                android:visibility="gone"
+                app:tint="@color/text_secondary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

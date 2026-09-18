@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_dark"
+    android:padding="32dp">
+
+    <!-- Lock icon -->
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_lock"
+        app:tint="@color/accent"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Locked"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your 6-digit PIN"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="32dp" />
+
+    <!-- PIN dots -->
+    <TextView
+        android:id="@+id/tvPinDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="○○○○○○"
+        android:textSize="28sp"
+        android:letterSpacing="0.3"
+        android:textColor="@color/accent"
+        android:layout_marginBottom="32dp" />
+
+    <!-- PIN pad -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginBottom="16dp">
+
+        <!-- Row 1: 1 2 3 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="1"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="2"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="3"
+            android:textSize="20sp" />
+
+        <!-- Row 2: 4 5 6 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="4"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn5"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="5"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn6"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="6"
+            android:textSize="20sp" />
+
+        <!-- Row 3: 7 8 9 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn7"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="7"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn8"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="8"
+            android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn9"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="9"
+            android:textSize="20sp" />
+
+        <!-- Row 4: fingerprint 0 backspace -->
+        <ImageButton
+            android:id="@+id/btnFingerprint"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_fingerprint"
+            app:tint="@color/accent"
+            android:padding="16dp"
+            android:contentDescription="Fingerprint" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn0"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnPinBack"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:layout_margin="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_reset"
+            app:tint="@color/text_secondary"
+            android:padding="16dp"
+            android:contentDescription="Backspace" />
+
+    </GridLayout>
+
+</LinearLayout>

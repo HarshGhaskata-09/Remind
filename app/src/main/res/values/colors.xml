@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Accent — same in both modes -->
+    <color name="accent">#E94560</color>
+    <color name="accent_light">#FF6B81</color>
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+
+    <!-- Light mode (default) -->
+    <color name="bg_dark">#F5F5F5</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_surface">#E8EAF6</color>
+    <color name="bg_glass">#FFFAFBFF</color>
+    <color name="glass_stroke">#99C5CAE9</color>
+    <color name="bg_rounded">#FFFFFF</color>
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#555566</color>
+    <color name="text_hint">#9999AA</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="input_bg">#F0F0F5</color>
+
+    <!-- Alarm / Timer / Stopwatch -->
+    <color name="alarm_fab_bg">#7A8BA0</color>
+    <color name="alarm_time_color">#1A1A2E</color>
+    <color name="timer_select_band">#1A000000</color>
+</resources>

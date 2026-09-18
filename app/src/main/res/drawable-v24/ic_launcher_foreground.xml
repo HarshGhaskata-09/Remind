@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Bell body — scaled down and centered in the safe zone (within 72dp center) -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M54,30
+            C44,30 37,37 37,47
+            L37,60 L33,64 L33,67
+            L75,67 L75,64 L71,60
+            L71,47 C71,37 64,30 54,30 Z" />
+
+    <!-- Bell top knob -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M51,28 C51,26.3 52.3,25 54,25
+            C55.7,25 57,26.3 57,28 L57,31 L51,31 Z" />
+
+    <!-- Bell clapper -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,67 C51,69.2 52.3,71 54,71
+            C55.7,71 57,69.2 57,67 Z" />
+
+    <!-- Shine highlight -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.28"
+        android:pathData="M43,36 C43,36 39,41 39,49 L42,49
+            C42,43 46,39 50,36 Z" />
+
+</vector>

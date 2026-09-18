@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <group
+        android:name="bell_group"
+        android:pivotX="48"
+        android:pivotY="22">
+
+        <!-- Bell body — fills most of the canvas -->
+        <path
+            android:fillColor="#E94560"
+            android:pathData="M48,18
+                C33,18 22,29 22,44
+                L22,64 L14,72 L14,76
+                L82,76 L82,72 L74,64
+                L74,44 C74,29 63,18 48,18 Z" />
+
+        <!-- Knob -->
+        <path
+            android:fillColor="#E94560"
+            android:pathData="M43,16 C43,13.2 45.2,11 48,11
+                C50.8,11 53,13.2 53,16 L53,20 L43,20 Z" />
+
+        <!-- Clapper -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M43,76 C43,80.4 45.2,84 48,84
+                C50.8,84 53,80.4 53,76 Z" />
+
+        <!-- Shine highlight -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:fillAlpha="0.25"
+            android:pathData="M34,28 C34,28 26,36 26,48 L31,48
+                C31,38 37,31 43,28 Z" />
+
+    </group>
+</vector>

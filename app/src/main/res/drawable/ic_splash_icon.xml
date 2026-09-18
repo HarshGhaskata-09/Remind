@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!--
+        Bell drawn in the inner safe zone (roughly 24..72)
+        so it fits neatly inside the system splash circle without overflow
+    -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M48,30
+            C40,30 34,36 34,44
+            L34,56 L29,61 L29,64
+            L67,64 L67,61 L62,56
+            L62,44 C62,36 56,30 48,30 Z" />
+
+    <!-- Knob -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M45,28 C45,26.3 46.3,25 48,25
+            C49.7,25 51,26.3 51,28 L51,31 L45,31 Z" />
+
+    <!-- Clapper -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,64 C45,66.2 46.3,68 48,68
+            C49.7,68 51,66.2 51,64 Z" />
+
+    <!-- Shine -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.25"
+        android:pathData="M39,35 C39,35 35,40 35,47 L38,47
+            C38,41 42,37 46,35 Z" />
+
+</vector>

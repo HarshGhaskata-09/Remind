@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <!-- Initial pause -->
+    <objectAnimator
+        android:duration="300"
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType" />
+
+    <!-- Ring left -->
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="-22"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_decelerate" />
+
+    <!-- Ring right -->
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="rotation"
+        android:valueFrom="-22"
+        android:valueTo="22"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_decelerate" />
+
+    <!-- Ring left -->
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="rotation"
+        android:valueFrom="22"
+        android:valueTo="-18"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_decelerate" />
+
+    <!-- Ring right -->
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="rotation"
+        android:valueFrom="-18"
+        android:valueTo="18"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_decelerate" />
+
+    <!-- Ring left smaller -->
+    <objectAnimator
+        android:duration="100"
+        android:propertyName="rotation"
+        android:valueFrom="18"
+        android:valueTo="-10"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_decelerate" />
+
+    <!-- Settle back -->
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="rotation"
+        android:valueFrom="-10"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/overshoot" />
+
+</set>

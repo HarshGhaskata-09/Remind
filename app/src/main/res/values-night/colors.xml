@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode -->
+    <color name="bg_dark">#1A1A2E</color>
+    <color name="bg_card">#16213E</color>
+    <color name="bg_surface">#0F3460</color>
+    <color name="bg_glass">#FF1E2D4E</color>
+    <color name="glass_stroke">#66FFFFFF</color>
+    <color name="bg_rounded">#1E2A4A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A0A0B0</color>
+    <color name="text_hint">#606070</color>
+    <color name="divider">#2A2A3E</color>
+    <color name="input_bg">#0D1B2A</color>
+
+    <!-- Alarm / Timer / Stopwatch -->
+    <color name="alarm_fab_bg">#5A6A80</color>
+    <color name="alarm_time_color">#FFFFFF</color>
+    <color name="timer_select_band">#22FFFFFF</color>
+</resources>

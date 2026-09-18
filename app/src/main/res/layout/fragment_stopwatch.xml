@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- Clock face — fixed size, centered in upper portion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Spacer top -->
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+        <com.example.remind.ClockFaceView
+            android:id="@+id/clockFace"
+            android:layout_width="280dp"
+            android:layout_height="280dp" />
+
+        <!-- Spacer bottom — bigger so clock sits in upper half -->
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <!-- FAB row: Reset (hidden by default) + Play/Pause — bottom center -->
+    <LinearLayout
+        android:id="@+id/llFabRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="88dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Reset FAB — hidden until watch has started -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSwReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_reset"
+            app:backgroundTint="@color/bg_card"
+            app:tint="@color/text_primary"
+            app:fabSize="mini"
+            app:elevation="6dp"
+            android:visibility="gone" />
+
+        <!-- Play / Pause FAB -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSwPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            app:backgroundTint="@color/alarm_fab_bg"
+            app:tint="@color/white"
+            app:fabSize="normal"
+            app:elevation="6dp" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
