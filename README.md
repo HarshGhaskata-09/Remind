@@ -15,17 +15,17 @@ The application is structured around four primary modules:
 
 ## Application Screenshots
 
-| Splash | Sign In | Registration | Task Dashboard |
+| | | | |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/1.LoadPage.png" width="200" /> | <img src="screenshots/2.SignPage.png" width="200" /> | <img src="screenshots/3.RegisterPage.png" width="200" /> | <img src="screenshots/4.TaskPage.png" width="200" /> |
 | **Loading Screen** | **Sign In** | **Registration** | **Task List** |
 
-| Task Creation | Notes | Timer | Stopwatch |
+| | | | |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/5.AddTask.png" width="200" /> | <img src="screenshots/6.NotesPage.png" width="200" /> | <img src="screenshots/7.Timer.png" width="200" /> | <img src="screenshots/8.StopWatch.png" width="200" /> |
 | **Add New Task** | **Notes Section** | **Timer Setup** | **Stopwatch** |
 
-| Profile | Terms & Conditions | Settings | Additional Settings |
+| | | | |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/9.ProfilePage.png" width="200" /> | <img src="screenshots/10.Terms&ConditionPage.png" width="200" /> | <img src="screenshots/11.SettingPage.png" width="200" /> | <img src="screenshots/12.AdditionalSetting.png" width="200" /> |
 | **User Profile** | **Terms & Conditions** | **Settings** | **Additional Settings** |
